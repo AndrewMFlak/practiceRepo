@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>something
+
+    <title>Some Misc Application
     </title>
 </head>
 
@@ -18,31 +19,50 @@
     <h1 class="text-center">
         This is some kind of display
     </h1>
-    <div id="map"></div>
-
-    <div>
-        <div class="d-block p-2 bg-primary text-white" id="screen">
-            <input id="inputId" default="misc location text here...."></input>
-            <br>
-            <br>
-            <button id="buttonId">
-                Some Button
-            </button>
-        </div>
+    <div class="container">
+        <form action="./something.php">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" name="name" placeholder="name" id="name" size="60" required-class="validate">
+                    <br>
+                    <label for="name">Name
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input type="text" name="e-mail" placeholder="e-mail" id="e-mail" size="60"
+                        required-class="validate">
+                    <br>
+                    <label for="name">E-Mail
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <textarea type="text" name="message" placeholder="message" id="message" size="60"
+                        required-class="validate"></textarea>
+                    <br>
+                    <label for="name">Message To Me...
+                    </label>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="input-field col s12"><input type="hidden" name="c" value="3" id="c" size="60"
+                        required-class="validate">
+                </div>
+            </div> -->
+            <div>
+                <button class="waves-effect waves-light btn submitbtn" type="submit">Submit</button>
+            </div>
+        </form>
     </div>
-    <script src="./javascript/something.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <footer>
+        This is some footer
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
